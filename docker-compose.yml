@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    container_name: appproduct
+    ports:
+      - "9000:9000"
+    volumes:
+      - .:/go/src/
+
+# Esse docker-compose vincula a pasta do projeto à para /go/src do container
